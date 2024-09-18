@@ -39,3 +39,7 @@ elif nim >= 101 and nim <= 121 :
 		print("kelas C'2")
 else:
 	print("anda bukan mahasiswa informatika 24")
+
+	nim = int(input("masukan nim: "))
+	hasil = "kelas A" if nim >=1 and nim <=50 else "Kelas B" if nim >= 51 and nim <= 100 else "Siluman"
+	print(hasil)
