@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pertemuan 4"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 04:10:41 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1VSThWRlNWQTsyMDI0LTA5LTI1OzA0OjA1OjQ3IFBNOzI4Njg="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1VSThWRlNWQTsyMDI0LTA5LTI1OzA0OjEwOjQxIFBNOzE7Mjk2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mobil" type="Integer" array="False" size=""/>
+            <assign variable="mobil" expression="0"/>
+            <while expression="mobil &lt;= 10">
+                <output expression="&quot;pengulangan ke&quot;" newline="True"/>
+                <output expression="mobil" newline="True"/>
+                <assign variable="mobil" expression="mobil+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
