@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106115_Ramadhan Riyan Pratama_C2'24 Posttest 4"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 08:50:33 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1VSThWRlNWQTsyMDI0LTEwLTAxOzEwOjA3OjQ2IEFNOzI4Mzc="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1VSThWRlNWQTsyMDI0LTEwLTAxOzA4OjUwOjMzIFBNOzg7Mjk2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Username, Lanjut" type="String" array="False" size=""/>
+            <declare name="Password, Loop" type="Integer" array="False" size=""/>
+            <assign variable="Username" expression="&quot;ramadhan&quot;"/>
+            <assign variable="Password" expression="115"/>
+            <assign variable="Loop" expression="0"/>
+            <while expression="Loop &lt;3">
+                <output expression="&quot;Masukan Username anda&quot;" newline="True"/>
+                <input variable="Username"/>
+                <output expression="&quot;Masukan Password anda&quot;" newline="True"/>
+                <input variable="Password"/>
+                <if expression="Username==&quot;ramadhan&quot;and Password==115">
+                    <then>
+                        <declare name="Mobil" type="Integer" array="False" size=""/>
+                        <declare name="diskon, hargamobil, hargadiskon" type="Real" array="False" size=""/>
+                        <output expression="&quot;masukan jenis mobil 1. Tesla,2.Toyota,3.Hyundai,4. tidak membeli mobil&quot;" newline="True"/>
+                        <input variable="Mobil"/>
+                        <if expression="Mobil= 1">
+                            <then>
+                                <assign variable="diskon" expression="0.17"/>
+                                <output expression="&quot;masukan harga mobil&quot;" newline="True"/>
+                                <input variable="hargamobil"/>
+                                <assign variable="hargadiskon" expression="hargamobil-(hargamobil*diskon)"/>
+                                <output expression="&quot;harga mobil&quot;&amp;mobil" newline="True"/>
+                                <output expression="&quot;Rp &quot;&amp; hargadiskon" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="Mobil= 2">
+                                    <then>
+                                        <assign variable="diskon" expression="0.21"/>
+                                        <output expression="&quot;masukan harga mobil&quot;" newline="True"/>
+                                        <input variable="hargamobil"/>
+                                        <assign variable="hargadiskon" expression="hargamobil-(hargamobil*diskon)"/>
+                                        <output expression="&quot;harga mobil&quot;&amp;mobil" newline="True"/>
+                                        <output expression="&quot;Rp &quot;&amp; hargadiskon" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Mobil= 3">
+                                            <then>
+                                                <assign variable="diskon" expression="0.23"/>
+                                                <output expression="&quot;masukan harga mobil&quot;" newline="True"/>
+                                                <input variable="hargamobil"/>
+                                                <assign variable="hargadiskon" expression="hargamobil-(hargamobil*diskon)"/>
+                                                <output expression="&quot;harga mobil&quot;&amp;mobil" newline="True"/>
+                                                <output expression="&quot;Rp &quot;&amp; hargadiskon" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="Mobil= 4">
+                                                    <then>
+                                                        <output expression="&quot;anda tidak memilih mobil manapun. program dihentikan!!&quot;" newline="True"/>
+                                                        <breakpoint expression="" always="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Username atau Password yang anda masukan salah. Mau Lanjut?&quot;" newline="True"/>
+                        <input variable="Lanjut"/>
+                        <if expression="Lanjut==&quot;Iya&quot;">
+                            <then>
+                                <output expression="&quot;Program dihentikan&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </then>
+                            <else>
+                                <assign variable="Loop" expression="Loop+1"/>
+                                <output expression="&quot;Anda tetap salah memasukan Username atau Password. Program dihentikan&quot;" newline="True"/>
+                                <output expression="Loop" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
